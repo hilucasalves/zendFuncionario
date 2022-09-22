@@ -5,6 +5,9 @@ namespace Application\Model;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
+ * Funcionario
+ *
+ * @ORM\Table(name="funcionario")
  * @ORM\Entity
  */
 class Funcionario {
@@ -15,17 +18,17 @@ class Funcionario {
      * @ORM\Column(type="integer")
      */
     private $id;
-
+    
     /**
-     * @ORM\Column(type="string", length=50)
+     * @ORM\Column(type="string", length=100)
      */
     private $nome;
-
+    
     /**
      * @ORM\Column(type="string", length=15)
      */
     private $cpf;
-
+    
     /**
      * @ORM\Column(type="decimal")
      */

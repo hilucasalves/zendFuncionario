@@ -21,7 +21,7 @@ class IndexController extends AbstractActionController {
                 $funcionario->setCpf($cpf);
                 $funcionario->setSalario($salario);
 
-                $em = $this->getServiceLocator()->get("Doctrine\ORM\EntityManager");
+                $em = $this->getServiceLocator()->get("doctrine.entitymanager.orm_default");
                 $em->persist($funcionario);
                 $em->flush();
 
